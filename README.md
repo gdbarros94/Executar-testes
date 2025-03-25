@@ -1,76 +1,69 @@
-# Curso de Testes de Software
+# Curso de Testes de Software - Módulo 3: Performance
 
-## 📚 Sobre o Curso
+## 📚 Sobre o Módulo
 
-Este repositório contém materiais, exemplos e exercícios práticos para o curso de Testes de Software. O curso aborda desde conceitos básicos até técnicas avançadas de teste, com foco em aplicações práticas e cenários reais.
+Este repositório contém materiais e exemplos práticos focados em testes de performance e carga. O módulo aborda conceitos avançados de teste de software, com ênfase em:
+
+- Testes de carga e stress
+- Monitoramento de performance
+- Análise de resultados
+- Documentação de testes
+- Relatórios técnicos
 
 ## 🎯 Objetivos
 
-- Compreender os fundamentos de teste de software
-- Desenvolver habilidades práticas em diferentes tipos de testes
-- Aprender a usar ferramentas modernas de teste
-- Entender processos de qualidade de software
-- Aplicar boas práticas em projetos reais
+- Compreender conceitos de performance testing
+- Aprender a usar ferramentas de teste de carga
+- Desenvolver habilidades em análise de performance
+- Criar documentação técnica de qualidade
+- Identificar e resolver problemas de performance
 
 ## 📂 Estrutura do Repositório
 
 ```
 .
-├── modulo-1/           # Fundamentos de Teste
-├── modulo-2/           # Testes Unitários e de Integração
-├── modulo-3/           # Testes de Performance e Carga
-│   ├── aula-4/         # Testes de Carga
-│   │   ├── load-test/  # Exemplos de Testes de Carga
-│   │   └── recursos/   # Materiais de Apoio
-│   └── recursos/       # Templates e Exemplos
-│       ├── templates/  # Templates para Documentação
-│       └── exemplos/   # Exemplos Práticos
-└── recursos/           # Recursos Gerais do Curso
+├── aula-4/                    # Testes de Carga
+│   ├── load-test/            # Exemplos de Testes de Carga
+│   │   ├── checkout_test.py  # Teste de carga do checkout
+│   │   └── api_test.py       # Teste de carga da API
+│   └── recursos/             # Materiais de Apoio
+└── recursos/                 # Recursos Gerais
+    ├── templates/           # Templates para Documentação
+    │   └── caso-teste-template.md
+    └── exemplos/            # Exemplos Práticos
+        ├── caso-teste-login.md
+        ├── relatorio-bug-api.md
+        └── relatorio-teste-carga.md
 ```
 
 ## 🛠️ Ferramentas Utilizadas
 
-- **Testes Unitários**: Jest, Mocha
-- **Testes de Integração**: Supertest
-- **Testes de UI**: Playwright
-- **Testes de Carga**: k6
+- **Testes de Carga**: k6, locust
+- **Monitoramento**: Grafana
+- **Documentação**: Markdown
 - **CI/CD**: GitHub Actions
-- **Relatórios**: Allure, Jest Reports
+- **Relatórios**: pytest-html
+- **Automação**: Playwright, pytest
 
-## 📝 Módulos
+## 📝 Conteúdo
 
-### Módulo 1: Fundamentos
-- Introdução aos tipos de testes
-- Pirâmide de testes
-- Estratégias de teste
-- Planejamento de testes
+### 1. Testes de Carga
+- Configuração do ambiente
+- Scripts de teste
+- Métricas e KPIs
+- Análise de resultados
 
-### Módulo 2: Testes Unitários e Integração
-- TDD (Test Driven Development)
-- Mocks e Stubs
-- Testes de API
-- Cobertura de código
-
-### Módulo 3: Testes de Performance
-- Testes de carga
-- Testes de stress
-- Monitoramento
-- Análise de performance
-
-## 📊 Recursos e Templates
-
-### Templates Disponíveis
-- Casos de teste
+### 2. Documentação
+- Templates de casos de teste
 - Relatórios de bugs
 - Relatórios de performance
-- Documentação de testes
 - Post-mortem de incidentes
 
-### Exemplos Práticos
-- APIs REST
-- Aplicações Web
-- Microsserviços
-- Bancos de dados
+### 3. Exemplos Práticos
+- Testes de API
+- Testes de UI
+- Testes de banco de dados
+- Análise de performance
 
 ## 🚀 Como Usar
 
@@ -81,13 +74,25 @@ git clone https://github.com/seu-usuario/curso-testes.git
 
 2. Instale as dependências:
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
-3. Execute os testes:
+3. Execute os testes de carga:
 ```bash
-npm test
+pytest load-test/checkout_test.py
 ```
+
+## 📊 Recursos e Templates
+
+### Templates Disponíveis
+- [Template de Caso de Teste](recursos/templates/caso-teste-template.md)
+- [Template de Relatório de Bug](recursos/exemplos/relatorio-bug-api.md)
+- [Template de Relatório de Performance](recursos/exemplos/relatorio-teste-carga.md)
+
+### Exemplos Práticos
+- [Caso de Teste de Login](recursos/exemplos/caso-teste-login.md)
+- [Relatório de Bug em API](recursos/exemplos/relatorio-bug-api.md)
+- [Relatório de Teste de Carga](recursos/exemplos/relatorio-teste-carga.md)
 
 ## 📖 Documentação
 
@@ -95,13 +100,13 @@ npm test
 - [Código de Conduta](CODE_OF_CONDUCT.md)
 - [Licença](LICENSE.md)
 
-## 🎓 Certificação
+## 🎓 Avaliação
 
-Para obter o certificado, é necessário:
-- Completar todos os módulos
-- Realizar os exercícios práticos
-- Desenvolver o projeto final
+Para aprovação no módulo, é necessário:
+- Completar os exercícios práticos
+- Desenvolver relatórios técnicos
 - Participar das discussões
+- Apresentar um projeto final
 
 ## 👥 Contribuição
 
@@ -115,17 +120,11 @@ Contribuições são bem-vindas! Por favor, leia o [guia de contribuição](CONT
 
 ## 📅 Atualizações
 
-O curso é atualizado regularmente com:
-- Novos exemplos práticos
-- Ferramentas atualizadas
-- Melhores práticas
+O módulo é atualizado regularmente com:
+- Novos exemplos de testes
+- Melhorias nos templates
+- Atualizações de ferramentas
 - Feedback dos alunos
-
-## 🏆 Reconhecimentos
-
-- Comunidade Open Source
-- Contribuidores
-- Alunos e Professores
 
 ## 📄 Licença
 

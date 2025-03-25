@@ -20,19 +20,33 @@ Este módulo foca em técnicas e estratégias práticas de teste de software, ap
   - Documentação de Testes
 
 - **Aula 4**: Ferramentas Profissionais
-  - Cypress para Testes E2E
+  - Playwright para Testes E2E
   - Relatórios de Teste
   - Integração Contínua
 
 ## Pré-requisitos
-- Conhecimento básico de JavaScript
+- Conhecimento básico de Python
 - Familiaridade com Git/GitHub
 - Editor de código de sua preferência
+- Python 3.8 ou superior
+- pip (gerenciador de pacotes Python)
+- pytest (framework de testes)
+- virtualenv (ambiente virtual Python)
 
 ## Como Usar Este Módulo
 1. Clone o repositório
-2. Navegue até a pasta do módulo 2
-3. Siga as instruções de cada aula sequencialmente
+2. Crie um ambiente virtual Python:
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+3. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+4. Navegue até a pasta do módulo 2
+5. Siga as instruções de cada aula sequencialmente
 
 ## Avaliação
 - Participação nas atividades práticas

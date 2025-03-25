@@ -25,8 +25,8 @@
 ## Projeto Prático: E-commerce
 
 ### Estrutura do Projeto
-- `carrinho.js`: Sistema de carrinho de compras
-- `produtos.js`: Gerenciamento de produtos
+- `carrinho.py`: Sistema de carrinho de compras
+- `produtos.py`: Gerenciamento de produtos
 
 ### Atividades
 1. Identificar bugs no sistema de carrinho
@@ -49,6 +49,20 @@
 - Testar com grande volume de produtos
 - Analisar tempo de resposta
 - Documentar resultados
+
+## Como Executar os Testes
+
+1. Ative o ambiente virtual:
+```bash
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+2. Execute os testes:
+```bash
+pytest exercicios/test_carrinho.py
+pytest exercicios/test_produtos.py
+```
 
 ## Entrega
 - Documentação dos testes realizados

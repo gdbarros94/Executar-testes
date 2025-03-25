@@ -13,7 +13,7 @@ Avaliar o desempenho do sistema e-commerce sob diferentes condições de carga.
 - API de pagamentos
 
 ### 1.3 Ferramentas Utilizadas
-- Cypress para testes E2E
+- Playwright para testes E2E
 - k6 para testes de carga
 - Lighthouse para métricas de frontend
 

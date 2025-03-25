@@ -29,7 +29,8 @@
 ## Projeto Prático: Sistema de Pagamentos
 
 ### Estrutura do Projeto
-- `processador.js`: Sistema de processamento de pagamentos
+- `processador.py`: Sistema de processamento de pagamentos
+- `test_processador.py`: Testes automatizados
 - `relatorio-teste.md`: Template de relatório
 
 ### Atividades
@@ -65,6 +66,24 @@
 - Documentar bugs encontrados
 - Propor melhorias
 - Apresentar métricas
+
+## Como Executar os Testes
+
+1. Ative o ambiente virtual:
+```bash
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+2. Execute os testes:
+```bash
+pytest test_processador.py -v
+```
+
+3. Gere relatório de cobertura:
+```bash
+pytest --cov=processador test_processador.py --cov-report=html
+```
 
 ## Entrega
 - Código implementado com TDD

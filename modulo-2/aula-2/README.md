@@ -23,8 +23,8 @@
 ## Projeto Prático: Sistema de Criptografia
 
 ### Estrutura do Projeto
-- `criptografia.js`: Implementação do sistema
-- `criptografia.test.js`: Testes automatizados
+- `criptografia.py`: Implementação do sistema
+- `test_criptografia.py`: Testes automatizados
 - `requisitos-api.md`: Especificação do sistema
 
 ### Atividades
@@ -57,6 +57,19 @@
 - Mapear fluxo de dados
 - Identificar dependências
 - Criar testes de integração
+
+## Como Executar os Testes
+
+1. Ative o ambiente virtual:
+```bash
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+2. Execute os testes com cobertura:
+```bash
+pytest --cov=criptografia test_criptografia.py
+```
 
 ## Entrega
 - Documentação dos testes realizados

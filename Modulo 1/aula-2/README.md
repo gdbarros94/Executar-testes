@@ -76,13 +76,13 @@
 ## 🎮 Atividade Prática
 
 ### Exercício 1: Criando Casos de Teste
-1. Acesse o arquivo `exercicios/sistema-login.js`
+1. Acesse o arquivo `exercicios/sistema_login.py`
 2. Crie 3 casos de teste usando o template
 3. Documente os casos no formato markdown
 4. Compartilhe com a turma
 
 ### Exercício 2: Análise de Documentação
-1. Leia o arquivo `exemplos/plano-teste-exemplo.md`
+1. Leia o arquivo `exemplos/plano_teste_exemplo.md`
 2. Identifique os elementos principais
 3. Sugira melhorias
 4. Crie um novo plano baseado no exemplo
@@ -90,8 +90,8 @@
 ## 📝 Material Complementar
 
 ### Templates
-- [Template de Plano de Teste](templates/plano-teste.md)
-- [Template de Caso de Teste](templates/caso-teste.md)
+- [Template de Plano de Teste](templates/plano_teste.md)
+- [Template de Caso de Teste](templates/caso_teste.md)
 - [Template de Relatório](templates/relatorio.md)
 
 ### Próxima Aula

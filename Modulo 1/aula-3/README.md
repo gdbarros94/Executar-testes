@@ -40,16 +40,14 @@
 - Independentes
 
 #### Exemplo Prático
-```javascript
-// calculadora.js
-function somar(a, b) {
-    return a + b;
-}
+```python
+# calculadora.py
+def somar(a, b):
+    return a + b
 
-// calculadora.test.js
-test('somar deve retornar a soma dos números', () => {
-    expect(somar(2, 3)).toBe(5);
-});
+# test_calculadora.py
+def test_somar():
+    assert somar(2, 3) == 5
 ```
 
 ### 3. Testes de Integração
@@ -61,42 +59,38 @@ test('somar deve retornar a soma dos números', () => {
 - Mais lentos
 
 #### Exemplo Prático
-```javascript
-// sistema-login.js
-class SistemaLogin {
-    constructor(bancoDados) {
-        this.bancoDados = bancoDados;
-    }
+```python
+# sistema_login.py
+class SistemaLogin:
+    def __init__(self, banco_dados):
+        self.banco_dados = banco_dados
 
-    login(email, senha) {
-        const usuario = this.bancoDados.buscarUsuario(email);
-        return usuario && usuario.senha === senha;
-    }
-}
+    def login(self, email, senha):
+        usuario = self.banco_dados.buscar_usuario(email)
+        return usuario and usuario['senha'] == senha
 
-// sistema-login.test.js
-test('login deve funcionar com banco de dados', () => {
-    const mockDB = {
-        buscarUsuario: (email) => ({
-            email,
-            senha: '123'
-        })
-    };
-    const sistema = new SistemaLogin(mockDB);
-    expect(sistema.login('teste@email.com', '123')).toBe(true);
-});
+# test_sistema_login.py
+def test_login_com_banco_dados():
+    mock_db = {
+        'buscar_usuario': lambda email: {
+            'email': email,
+            'senha': '123'
+        }
+    }
+    sistema = SistemaLogin(mock_db)
+    assert sistema.login('teste@email.com', '123') is True
 ```
 
 ## 🎮 Atividade Prática
 
 ### Exercício 1: Testes Unitários
-1. Acesse o arquivo `exercicios/calculadora.js`
+1. Acesse o arquivo `exercicios/calculadora.py`
 2. Crie testes unitários para todas as funções
 3. Execute os testes
 4. Documente os resultados
 
 ### Exercício 2: Testes de Integração
-1. Acesse o arquivo `exercicios/sistema-pagamento.js`
+1. Acesse o arquivo `exercicios/sistema_pagamento.py`
 2. Crie testes de integração
 3. Use mocks para simular dependências
 4. Documente os resultados
@@ -104,9 +98,9 @@ test('login deve funcionar com banco de dados', () => {
 ## 📝 Material Complementar
 
 ### Exemplos
-- [Exemplo de Teste Unitário](exemplos/teste-unitario.md)
-- [Exemplo de Teste de Integração](exemplos/teste-integracao.md)
-- [Exemplo de Mock](exemplos/mock-exemplo.md)
+- [Exemplo de Teste Unitário](exemplos/teste_unitario.md)
+- [Exemplo de Teste de Integração](exemplos/teste_integracao.md)
+- [Exemplo de Mock](exemplos/mock_exemplo.md)
 
 ### Próxima Aula
 - Testes de sistema

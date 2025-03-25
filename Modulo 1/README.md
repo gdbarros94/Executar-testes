@@ -37,4 +37,7 @@ Este módulo introduz os conceitos fundamentais de testes de software, abordando
 - Navegador web
 - Editor de texto
 - Conta no GitHub
-- Node.js (para exercícios práticos) 
+- Python 3.8 ou superior
+- pip (gerenciador de pacotes Python)
+- pytest (framework de testes)
+- virtualenv (ambiente virtual Python) 

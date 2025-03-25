@@ -1,4 +1,4 @@
- # Aula 1: Introdução aos Testes de Software
+# Aula 1: Introdução aos Testes de Software
 
 ## 🎯 Objetivos da Aula
 - Compreender a importância dos testes de software
@@ -17,11 +17,10 @@
   - Perda de confiança do cliente
 
 #### Exemplo Prático
-```javascript
-// Exemplo de código sem testes
-function calcularDesconto(valor, desconto) {
-    return valor - desconto;
-}
+```python
+# Exemplo de código sem testes
+def calcular_desconto(valor, desconto):
+    return valor - desconto
 ```
 
 ### 2. Conceitos Básicos
@@ -39,28 +38,26 @@ function calcularDesconto(valor, desconto) {
 ### 3. Primeiro Caso de Teste
 
 #### Exemplo Prático
-```javascript
-// calculadora.js
-function somar(a, b) {
-    return a + b;
-}
+```python
+# calculadora.py
+def somar(a, b):
+    return a + b
 
-// calculadora.test.js
-test('somar 2 + 3 deve retornar 5', () => {
-    expect(somar(2, 3)).toBe(5);
-});
+# test_calculadora.py
+def test_somar():
+    assert somar(2, 3) == 5
 ```
 
 ## 🎮 Atividade Prática
 
 ### Exercício 1: Identificando Bugs
-1. Abra o arquivo `exercicios/calculadora-bugada.js`
+1. Abra o arquivo `exercicios/calculadora_bugada.py`
 2. Identifique os bugs
 3. Crie um caso de teste que falha
 4. Abra uma issue no GitHub descrevendo o problema
 
 ### Exercício 2: Primeiro Teste
-1. Crie um arquivo de teste para a função `calcularDesconto`
+1. Crie um arquivo de teste para a função `calcular_desconto`
 2. Implemente casos de teste básicos
 3. Execute os testes
 4. Documente os resultados

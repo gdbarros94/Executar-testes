@@ -3,12 +3,12 @@
 ## Objetivos
 - Conhecer ferramentas profissionais de teste
 - Configurar ambiente de testes automatizados
-- Implementar testes E2E com Cypress
+- Implementar testes E2E com Playwright
 - Criar pipeline de CI/CD
 
 ## Conteúdo
 
-### 1. Cypress
+### 1. Playwright
 - Instalação e configuração
 - Seletores e comandos básicos
 - Page Objects
@@ -29,13 +29,18 @@
 ## Projeto Prático: Testes E2E
 
 ### Estrutura do Projeto
-- `cypress/`: Testes E2E
+- `tests/`: Testes E2E
+  - `test_checkout.py`: Testes do fluxo de checkout
+  - `test_login.py`: Testes do fluxo de login
+- `pages/`: Page Objects
+  - `checkout_page.py`: Objetos da página de checkout
+  - `login_page.py`: Objetos da página de login
 - `relatorio-desempenho.md`: Análise de performance
 
 ### Atividades
 
-#### 1. Configuração do Cypress
-- Instalar e configurar Cypress
+#### 1. Configuração do Playwright
+- Instalar e configurar Playwright
 - Criar primeiro teste E2E
 - Configurar relatórios
 - Executar testes
@@ -66,6 +71,29 @@
 - Identificar gargalos
 - Propor melhorias
 
+## Como Executar os Testes
+
+1. Ative o ambiente virtual:
+```bash
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+2. Instale as dependências do Playwright:
+```bash
+playwright install
+```
+
+3. Execute os testes:
+```bash
+pytest tests/ --headed
+```
+
+4. Gere relatório HTML:
+```bash
+pytest tests/ --html=report.html
+```
+
 ## Entrega
 - Testes E2E implementados
 - Pipeline configurado
@@ -79,7 +107,7 @@
 - Análise de resultados
 
 ## Recursos Adicionais
-- Documentação do Cypress
-- GitHub Actions
-- Ferramentas de relatório
-- Métricas de performance 
+- [Documentação do Playwright](https://playwright.dev/python/docs/intro)
+- [GitHub Actions](https://docs.github.com/en/actions)
+- [Pytest HTML Report](https://pytest-html.readthedocs.io/)
+- [Locust para Testes de Carga](https://locust.io/) 
