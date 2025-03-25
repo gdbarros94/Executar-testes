@@ -1,0 +1,44 @@
+name: Quality Gate
+on: 
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      # Bug 1: Versão do Node não especificada
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+      
+      # Bug 2: Não usa cache de dependências
+      - name: Install Dependencies
+        run: npm install
+      
+      # Bug 3: Não especifica quais testes executar
+      - name: Run Tests
+        run: npm test
+      
+      # Bug 4: Não configura threshold de cobertura
+      - name: Code Coverage
+        run: npx nyc report
+      
+      # Bug 5: Auditoria de segurança incorreta
+      - name: Security Scan
+        run: npm audit --production
+      
+      # Bug 6: Não especifica regras de lint
+      - name: Code Linting
+        run: npx eslint .
+      
+      # Bug 7: Não publica resultados
+      - name: Publish Results
+        run: echo "Results published"
+      
+      # Bug 8: Não falha em caso de erro
+      - name: Quality Check
+        run: |
+          echo "Quality check passed"
+          exit 0 
