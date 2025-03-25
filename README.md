@@ -1,98 +1,103 @@
-# Curso de Testes de Software - Módulo 3: Performance
+# Curso de Testes de Software
 
-## 📚 Sobre o Módulo
+## 📚 Sobre o Curso
 
-Este repositório contém materiais e exemplos práticos focados em testes de performance e carga. O módulo aborda conceitos avançados de teste de software, com ênfase em:
+Este curso abrange os fundamentos e práticas avançadas de testes de software, desde conceitos básicos até técnicas profissionais de teste. O material é estruturado em três módulos principais, cada um focando em aspectos específicos do processo de teste.
 
-- Testes de carga e stress
-- Monitoramento de performance
-- Análise de resultados
-- Documentação de testes
-- Relatórios técnicos
+## 🎯 Objetivos do Curso
 
-## 🎯 Objetivos
+- Compreender os fundamentos de testes de software
+- Dominar diferentes técnicas e estratégias de teste
+- Aprender ferramentas profissionais de teste
+- Desenvolver habilidades práticas de documentação
+- Simular ambiente real de trabalho de um tester
 
-- Compreender conceitos de performance testing
-- Aprender a usar ferramentas de teste de carga
-- Desenvolver habilidades em análise de performance
-- Criar documentação técnica de qualidade
-- Identificar e resolver problemas de performance
+## 📂 Estrutura do Curso
 
-## 📂 Estrutura do Repositório
+### Módulo 1: Fundamentos e Conceitos Básicos
+- [Aula 1: Introdução aos Testes de Software](Modulo%201/aula-1/README.md)
+- [Aula 2: Terminologia e Artefatos de Teste](Modulo%201/aula-2/README.md)
+- [Aula 3: Níveis de Teste - Parte 1](Modulo%201/aula-3/README.md)
+- [Aula 4: Níveis de Teste - Parte 2](Modulo%201/aula-4/README.md)
 
-```
-.
-├── aula-4/                    # Testes de Carga
-│   ├── load-test/            # Exemplos de Testes de Carga
-│   │   ├── checkout_test.py  # Teste de carga do checkout
-│   │   └── api_test.py       # Teste de carga da API
-│   └── recursos/             # Materiais de Apoio
-└── recursos/                 # Recursos Gerais
-    ├── templates/           # Templates para Documentação
-    │   └── caso-teste-template.md
-    └── exemplos/            # Exemplos Práticos
-        ├── caso-teste-login.md
-        ├── relatorio-bug-api.md
-        └── relatorio-teste-carga.md
-```
+### Módulo 2: Técnicas e Estratégias de Teste
+- [Aula 1: Tipos de Teste na Prática](modulo-2/aula-1/README.md)
+- [Aula 2: Técnicas Caixa Preta vs Branca](modulo-2/aula-2/README.md)
+- [Aula 3: Estratégias Preventivas e Reativas](modulo-2/aula-3/README.md)
+- [Aula 4: Ferramentas Profissionais](modulo-2/aula-4/README.md)
 
-## 🛠️ Ferramentas Utilizadas
+### Módulo 3: Gestão Avançada de Testes
+- [Aula 1: Plano de Teste Robusto](modulo-3/aula-1/README.md)
+- [Aula 2: Relato de Defeitos](modulo-3/aula-2/README.md)
+- [Aula 3: Ciclo de Melhorias](modulo-3/aula-3/README.md)
+- [Aula 4: Qualidade Contínua](modulo-3/aula-4/README.md)
 
-- **Testes de Carga**: k6, locust
+## 🛠️ Ferramentas e Tecnologias
+
+- **Linguagem de Programação**: Python 3.8+
+- **Frameworks de Teste**: pytest
+- **Testes E2E**: Playwright
+- **Testes de Carga**: k6, Locust
 - **Monitoramento**: Grafana
-- **Documentação**: Markdown
 - **CI/CD**: GitHub Actions
+- **Documentação**: Markdown
 - **Relatórios**: pytest-html
-- **Automação**: Playwright, pytest
 
-## 📝 Conteúdo
-
-### 1. Testes de Carga
-- Configuração do ambiente
-- Scripts de teste
-- Métricas e KPIs
-- Análise de resultados
-
-### 2. Documentação
-- Templates de casos de teste
-- Relatórios de bugs
-- Relatórios de performance
-- Post-mortem de incidentes
-
-### 3. Exemplos Práticos
-- Testes de API
-- Testes de UI
-- Testes de banco de dados
-- Análise de performance
-
-## 🚀 Como Usar
+## 📝 Como Usar Este Material
 
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/curso-testes.git
 ```
 
-2. Instale as dependências:
+2. Configure o ambiente:
 ```bash
+# Crie um ambiente virtual
+python -m venv venv
+
+# Ative o ambiente virtual
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# Instale as dependências
 pip install -r requirements.txt
 ```
 
-3. Execute os testes de carga:
-```bash
-pytest load-test/checkout_test.py
-```
+3. Siga a ordem dos módulos:
+   - Comece pelo Módulo 1
+   - Complete todos os exercícios
+   - Faça as entregas via GitHub Issues
+   - Participe das discussões
 
-## 📊 Recursos e Templates
+## 📚 Recursos e Templates
 
 ### Templates Disponíveis
-- [Template de Caso de Teste](recursos/templates/caso-teste-template.md)
-- [Template de Relatório de Bug](recursos/exemplos/relatorio-bug-api.md)
-- [Template de Relatório de Performance](recursos/exemplos/relatorio-teste-carga.md)
+- [Template de Caso de Teste](modulo-3/recursos/templates/caso-teste-template.md)
+- [Template de Relatório de Bug](modulo-3/.github/ISSUE_TEMPLATE/defect-report.md)
+- [Template de Relatório de Performance](modulo-2/aula-4/relatorio-desempenho.md)
 
 ### Exemplos Práticos
-- [Caso de Teste de Login](recursos/exemplos/caso-teste-login.md)
-- [Relatório de Bug em API](recursos/exemplos/relatorio-bug-api.md)
-- [Relatório de Teste de Carga](recursos/exemplos/relatorio-teste-carga.md)
+- [Caso de Teste de Login](modulo-3/recursos/exemplos/caso-teste-login.md)
+- [Relatório de Bug em API](modulo-3/recursos/exemplos/relatorio-bug-api.md)
+- [Relatório de Teste de Carga](modulo-3/recursos/exemplos/relatorio-teste-carga.md)
+
+## 📋 Instruções de Entrega
+
+Consulte o documento [Instruções para Entrega dos Exercícios](INSTRUCOES_ENTREGA.md) para detalhes sobre:
+- Forma de entrega via GitHub Issues
+- Estrutura das issues
+- Prazo de entrega (29/04/2024)
+- Critérios de avaliação
+- Exercícios obrigatórios
+
+## 🎓 Avaliação
+
+A nota final é composta por:
+- 40% Issues de exercícios
+- 30% Projeto final
+- 30% Participação em discussões
 
 ## 📖 Documentação
 
@@ -100,31 +105,18 @@ pytest load-test/checkout_test.py
 - [Código de Conduta](CODE_OF_CONDUCT.md)
 - [Licença](LICENSE.md)
 
-## 🎓 Avaliação
-
-Para aprovação no módulo, é necessário:
-- Completar os exercícios práticos
-- Desenvolver relatórios técnicos
-- Participar das discussões
-- Apresentar um projeto final
-
-## 👥 Contribuição
-
-Contribuições são bem-vindas! Por favor, leia o [guia de contribuição](CONTRIBUTING.md) antes de submeter pull requests.
-
-## 📫 Suporte
+## 👥 Suporte
 
 - Email: suporte@cursotestes.com
 - Discord: [Link para servidor]
 - Issues: [GitHub Issues]
 
-## 📅 Atualizações
+## 📅 Cronograma
 
-O módulo é atualizado regularmente com:
-- Novos exemplos de testes
-- Melhorias nos templates
-- Atualizações de ferramentas
-- Feedback dos alunos
+- Início: 01/04/2024
+- Entrega dos Exercícios: 29/04/2024
+- Projeto Final: 15/05/2024
+- Encerramento: 30/05/2024
 
 ## 📄 Licença
 
