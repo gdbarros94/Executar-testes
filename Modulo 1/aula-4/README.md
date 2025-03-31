@@ -113,7 +113,7 @@ def test_fluxo_completo_compra():
 ## 🎮 Atividade Prática
 
 ### Exercício 1: Testes de Sistema
-1. Acesse o arquivo `exercicios/sistema_vendas.py`
+1. Acesse o arquivo `exercicios/ecommerce.py`
 2. Crie testes de sistema
 3. Use mocks para simular dependências
 4. Documente os resultados
