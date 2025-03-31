@@ -119,9 +119,9 @@ def test_fluxo_completo_compra():
 4. Documente os resultados
 
 ### Exercício 2: Testes de Aceitação
-1. Acesse o arquivo `exercicios/test_aceitacao.py`
+1. Acesse um site de noticias como uol.com.br/terra.com.br/g1.com.br ...
 2. Crie testes de aceitação
-3. Use Playwright para automação
+3. Verifique e avalie a interface, botões, layout, usabilidade, descreva se o site possui uma interface amigável, se algo pode melhorar, se algo está errado. 
 4. Documente os resultados
 
 ## 📝 Material Complementar
