@@ -1,8 +1,4 @@
-Segue abaixo uma apostila completa e robusta para sua aula de Selenium com Python. O material está dividido em capítulos que abordam desde a introdução ao Selenium e a preparação do ambiente, passando pelos principais métodos e casos de uso, até cenários práticos e atividades de fixação. Sinta-se à vontade para ajustar exemplos e atividades conforme o perfil da sua turma.
-
----
-
-# Apostila: Selenium com Python – Do Básico ao Avançado
+Selenium com Python – Do Básico ao Avançado
 
 ## Sumário
 
@@ -371,7 +367,3 @@ Aprofunde seus conhecimentos experimentando e integrando essas soluções em um 
 - [Documentação oficial do Selenium Python](https://selenium-python.readthedocs.io/)
 - Cursos e tutoriais no YouTube e plataformas de ensino (Ex.: Udemy, Coursera)
 - Comunidades e fóruns (StackOverflow, GitHub, grupos no Telegram/Discord)
-
-Espero que este material seja útil para sua aula e estimule os alunos a explorarem o universo da automação com Selenium e Python. Bom trabalho e bons testes!
-
----
